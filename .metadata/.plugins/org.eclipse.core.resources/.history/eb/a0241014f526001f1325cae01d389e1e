@@ -1,0 +1,19 @@
+package Grouping;
+
+import org.testng.annotations.Test;
+
+public class Payment 
+{
+
+	@Test(priority=1)
+	void paymentRupees()
+	{
+	System.out.println(" Payment Rupees ");	
+	}
+
+	@Test(priority=2)
+	void paymentDollars()
+	{
+	System.out.println("Payment Dollars ");	
+	}
+}

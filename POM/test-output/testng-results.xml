@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-12T12:36:50 IST" name="Default suite" finished-at="2024-06-12T12:37:09 IST" duration-ms="19608">
+    <groups>
+    </groups>
+    <test started-at="2024-06-12T12:36:50 IST" name="Default test" finished-at="2024-06-12T12:37:09 IST" duration-ms="19608">
+      <class name="POMPageFactory.LoginTest2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:POMPageFactory.LoginTest2@48f2bd5b]" started-at="2024-06-12T12:36:50 IST" name="setup" finished-at="2024-06-12T12:37:06 IST" duration-ms="16553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testlogin()[pri:0, instance:POMPageFactory.LoginTest2@48f2bd5b]" started-at="2024-06-12T12:37:06 IST" name="testlogin" finished-at="2024-06-12T12:37:09 IST" duration-ms="2984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+      </class> <!-- POMPageFactory.LoginTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

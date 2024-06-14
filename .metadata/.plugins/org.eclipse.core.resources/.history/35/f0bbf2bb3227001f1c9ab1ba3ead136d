@@ -1,0 +1,57 @@
+package Parameterization;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class Dateprovider 
+{
+	WebDriver driver;
+	
+    @BeforeClass
+	void open()
+	{
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
+    
+    @Test(dataProvider = "Data")
+    void login(String username,String password)
+    {
+    	driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+    	driver.manage().window().maximize();
+    	driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys(username);
+    	driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys(password);
+    	driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+    	boolean statue = driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
+    	if(statue==true)
+    	{
+    		driver.findElement(By.xpath("//a[normalize-space()='Logout'][@class=\"list-group-item\"]")).click();
+    		Assert.assertTrue(true);
+    	}
+    	else
+    	{
+    		Assert.fail();
+    	}
+    	
+    }
+    
+    @DataProvider(name="Data")
+    Object[][] loginDate()
+    {
+    	Object data[][]= {
+    			{"mag@123","test@123"},
+    			{"abc@123","a34"},
+    			{"bgrll",123},
+    	
+    	};
+    	return data;
+    }
+	
+}

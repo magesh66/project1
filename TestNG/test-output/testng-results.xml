@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-12T21:52:11 IST" name="Suite" finished-at="2024-06-12T21:53:04 IST" duration-ms="52697">
+    <groups>
+    </groups>
+    <test started-at="2024-06-12T21:52:11 IST" name="EdgeTest" finished-at="2024-06-12T21:52:53 IST" duration-ms="41612">
+      <class name="Parallel.parellel">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Parallel.parellel@564fabc8]" started-at="2024-06-12T21:52:11 IST" name="openBrowser" finished-at="2024-06-12T21:52:52 IST" duration-ms="41435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLogo()[pri:0, instance:Parallel.parellel@564fabc8]" started-at="2024-06-12T21:52:52 IST" name="testLogo" finished-at="2024-06-12T21:52:53 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:0, instance:Parallel.parellel@564fabc8]" started-at="2024-06-12T21:52:53 IST" name="testTitle" finished-at="2024-06-12T21:52:53 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method signature="testUrl()[pri:0, instance:Parallel.parellel@564fabc8]" started-at="2024-06-12T21:52:53 IST" name="testUrl" finished-at="2024-06-12T21:52:53 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrl -->
+      </class> <!-- Parallel.parellel -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2024-06-12T21:52:11 IST" name="ChromeTest" finished-at="2024-06-12T21:53:04 IST" duration-ms="52697">
+      <class name="Parallel.parellel">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Parallel.parellel@15ff3e9e]" started-at="2024-06-12T21:52:11 IST" name="openBrowser" finished-at="2024-06-12T21:53:04 IST" duration-ms="52537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLogo()[pri:0, instance:Parallel.parellel@15ff3e9e]" started-at="2024-06-12T21:53:04 IST" name="testLogo" finished-at="2024-06-12T21:53:04 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:0, instance:Parallel.parellel@15ff3e9e]" started-at="2024-06-12T21:53:04 IST" name="testTitle" finished-at="2024-06-12T21:53:04 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method signature="testUrl()[pri:0, instance:Parallel.parellel@15ff3e9e]" started-at="2024-06-12T21:53:04 IST" name="testUrl" finished-at="2024-06-12T21:53:04 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrl -->
+      </class> <!-- Parallel.parellel -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
